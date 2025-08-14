@@ -43,3 +43,23 @@ let union3: Union1 = {
   language: "",
   color: "",
 };
+
+// Error
+// let union4: Union1 = {
+//   name: "",
+// };
+
+/**
+ * 교집합 타입 - Intersection Type
+ */
+
+let vari: number & string; // never
+
+type Intersection = Dog & Person;
+
+// Intersection 이기 때문에 Dog와 Person이 가지고있는 모든 Props를 가져야 한다.
+let inter: Intersection = {
+  name: "",
+  color: "",
+  language: "",
+};
