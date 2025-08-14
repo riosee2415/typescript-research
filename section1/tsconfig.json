@@ -1,0 +1,33 @@
+{
+  // 컴파일 옵션 설정
+  "compilerOptions": {
+    "target": "esnext",
+
+    // 모듈 옵션 -
+    // commonJS : const express= require("express)
+    // eJS : import express from "express"
+    "module": "esnext",
+
+    // 컴파일 디렉토리 설정
+    "outDir": "dist",
+
+    // 타입 검사 시 엄격한 검사의 정도 설정
+    // 엄격한 타입 검사 설정 - strict
+    "strict": true,
+
+    // 전역모듈 제어
+    "moduleDetection": "force",
+
+    //'undici-types' 오류 해제
+    "skipLibCheck": true
+  },
+
+  // package.json에   "type": "module" 넣고, ts-node 설정을 넣게 되면
+  // node의 모듈이 ESjs로 변경
+  "ts-node": {
+    "esm": true
+  },
+
+  // 컴파일 범위 및 옵션 - 현재 경로 기준 src 디렉토리 내 모든 파일 컴파일 대상 - 명령어 "tsc"
+  "include": ["src"]
+}

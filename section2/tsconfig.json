@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ESnext",
+    "module": "ESnext",
+    "outDir": "dist",
+    "strict": true,
+    // 변수에 null 값을 허용
+    // "strictNullChecks": false,
+    "moduleDetection": "force",
+    "skipLibCheck": true
+  },
+  "ts-node": {
+    "esm": true
+  },
+  "include": ["src"]
+}
